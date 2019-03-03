@@ -23,9 +23,10 @@ public class Laskuri{
 	public Laskuri(){
 		this.tapahtumia = 0;
 	}
+	
 
-  	public void lisaa(){
-    		this.tapahtumia = this.tapahtumia + 1; 
+  	public void lisaa(int lisays){
+    		this.tapahtumia = this.tapahtumia + lisays; 
   	}
   	public int lukema(){
     		return this.tapahtumia;
@@ -34,7 +35,7 @@ public class Laskuri{
     		this.tapahtumia = 0;
   	}
 	public String toString(){
-		return "Laskurin lukema on " + this.tapahtumia;
+		return "Lukema:" + this.tapahtumia;
 	}
 
 }
